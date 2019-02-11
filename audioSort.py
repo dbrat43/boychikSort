@@ -30,15 +30,16 @@ with open ("new boychiks chat.html") as file:
 		
 		for file_y in directory:
 
-			newFilePrefix += 1
+			# newFilePrefix += 1
 			
 
 	 		# rename files in numerical order
-			# if file_y.startswith(oldFilePrefix):
+			if file_y.startswith(oldFilePrefix):
 
-				# print oldFilePrefix
-				# newFileName = newFilePrefix + "." + oldFileSuffix
-				# print newFileName
+				print oldFilePrefix
+				newFileName = str(newFilePrefix) + "." + oldFileSuffix
+				print newFileName
+				newFilePrefix += 1
 				# numString = newFileName.split('.')[0]
 				# print numString
 				# newFilePrefix = chr(ord(numString) + 1)
@@ -46,15 +47,7 @@ with open ("new boychiks chat.html") as file:
 				# print newFileName
 			# os.rename("C:\\Users\\Daniel\\Desktop\\facebook-danieljosephb\\messages\\audio\\" + file, "C:\\Users\\Daniel\\Desktop\\facebook-danieljosephb\\messages\\audio\\" + newFileName)
 
-			print newFilePrefix
 
 file.close()
 
 # # oldest file is 10205825239851378.mp4
-
-# running = True
-# i = 1
-
-# while running:
-#     i = i + 1
-#     print i
